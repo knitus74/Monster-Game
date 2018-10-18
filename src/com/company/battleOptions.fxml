@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            prefHeight="400.0" prefWidth="600.0" fx:id="battleTextGridPane">
+    <children>
+        <Label styleClass="fightText" fx:id = "choseToFight" GridPane.columnIndex = "0" GridPane.rowIndex="0" onMouseClicked = "#onFightClicked">FIGHT</Label>
+        <Label styleClass="fightText" fx:id = "choseBag" GridPane.columnIndex="1" GridPane.rowIndex = "0">BAG</Label>
+        <Label styleClass = "fightText" fx:id = "choseMonsters" GridPane.columnIndex="0" GridPane.rowIndex = "1" onMouseClicked = "#onMonstersClicked">MONSTERS</Label>
+        <Label styleClass = "fightText" fx:id = "choseToFlee" GridPane.columnIndex = "1" GridPane.rowIndex = "1" onMouseClicked = "#onFleeClicked">FLEE</Label>
+    </children>
+</GridPane>

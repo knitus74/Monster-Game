@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import java.net.URL?>
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.company.WalkingScene" fx:id = "world"
+           prefHeight="375.0" prefWidth="512.0" onKeyPressed = "#handleOnKeyPressed" onKeyReleased = "#handleOnKeyReleased">
+    <children>
+        <Canvas fx:id = "canvas" height = "375.0" width = "512.0">
+        </Canvas>
+    </children>
+    <stylesheets>
+        <URL value="@main.css" />
+        <URL value="https://fonts.googleapis.com/css?family=Press+Start+2P" />
+    </stylesheets>
+</StackPane>

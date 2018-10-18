@@ -1,0 +1,72 @@
+VBox{
+    -fx-alignment: center-right;
+    -fx-padding: 0px 20px 0px 0px;
+}
+
+#battleTextGridPane, .battleTextGridPanes{
+    -fx-background-color: #f0ffff;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    /*-fx-grid-lines-visible: true;*/
+    -fx-padding: 10px;
+}
+
+#dialogueOuter {
+    -fx-padding: 0px;
+    -fx-alignment: bottom-center;
+}
+
+#dialogueInner {
+    -fx-background-color: "black";
+    -fx-alignment: center;
+}
+
+Label, Text, Button, .fightText{
+    -fx-background-color: #f0ffff;
+    -fx-font-size: 16px;
+    -fx-font-family : "Press Start 2P", cursive;
+}
+
+.battleMoveDescription{
+    -fx-font-size: 12px;
+}
+
+.healthBarText{
+    -fx-font-size: 14px;
+}
+
+Button{
+    -fx-text-alignment: center;
+    -fx-cursor: hand;
+    -fx-pref-width: 200px;
+    -fx-pref-height: 60px;
+}
+
+Label:hover, Button:hover{
+    -fx-border-color: red;
+    -fx-border-style: solid;
+    -fx-border-width: 3px;
+}
+
+.healthBarOuter{
+    -fx-fill: "black";
+}
+
+.healthBarInner{
+}
+
+.healthBarLevel{
+    -fx-font-size: 10px;
+}
+
+.healthBarOuter, .healthBarInner{
+}
+
+.fightOptionsHbox{
+    -fx-alignment: center;
+    -fx-spacing: 5px;
+}
+
+.battleMovesGridPane{
+    -fx-alignment: center;
+}

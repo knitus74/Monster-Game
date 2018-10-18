@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.shape.Rectangle?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.company.HealthBar" fx:id = "wholeHealthBar" styleClass="battleTextGridPanes">
+        <Text fx:id="monsterNameText" GridPane.columnIndex="0" GridPane.rowIndex="0" styleClass="healthBarText"></Text>
+        <HBox GridPane.columnIndex="1" GridPane.rowIndex="0">
+            <Label styleClass="healthBarLevel">lvl</Label>
+            <Text fx:id = "monsterLevelText" styleClass="healthBarText"></Text>
+        </HBox>
+        <HBox GridPane.columnIndex="0" GridPane.rowIndex = "1" GridPane.columnSpan="2">
+            <Label styleClass="healthBarText">HP</Label>
+            <StackPane>
+                <Rectangle fx:id="healthBarOuter" styleClass="healthBarOuter" height="10" arcWidth="3" arcHeight="3"></Rectangle>
+                <Rectangle fx:id="healthBarInner" styleClass="healthBarInner" height="7" arcWidth="3" arcHeight="3"></Rectangle>
+            </StackPane>
+        </HBox>
+        <Text fx:id="healthFractionText" GridPane.columnIndex="0" GridPane.rowIndex="2" styleClass="healthBarText"></Text>
+</GridPane>

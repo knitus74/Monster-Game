@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.text.TextFlow?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.company.BattleDialogue" fx:id = "dialogueOuter">
+      <children>
+          <HBox fx:id = "dialogueInner" onMousePressed = "#onMousePressed" onMouseReleased = "#onMouseRelease">
+              <children>
+                <GridPane fx:id = "battleTextGridPane">
+                    <TextFlow GridPane.columnIndex="0" GridPane.rowIndex="0">
+                        <Text fx:id = "battleText"></Text>
+                    </TextFlow>
+                </GridPane>
+              </children>
+          </HBox>
+      </children>
+</VBox>
